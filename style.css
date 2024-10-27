@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#top-nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: white;
+    right: 0;
+    position: fixed;
+    z-index: 10;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-div {
+    display: flex;
+}
+
+.ham {
+    font-size: 25px;
+    padding: 8.5px;
+}
+
+.logo {
+    color: red;
+    font-size: 25px;
+    padding: 13px;
+}
+
+.header {
+    font-size: larger;
+}
+
+#input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-left: 5px;
+    outline: none;
+}
+
+#Search-div {
+    width: 700px;
+    height: 40px;
+    border: 1px solid #ccc;
+    background-color: white;
+    margin-left: auto;
+    display: flex;
+    border-radius: 20px;
+}
+
+#Search-btn {
+    width: 70px;
+    height: 100%;
+    border: 0.5px solid #ccc;
+    background-color: #eeeded;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#m-s-btn {
+    display: none;
+}
+
+#user-img {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.icons {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    font-size: large;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.icons:hover {
+    background-color: #ccc;
+}
+
+#icon-div {
+    display: flex;
+    margin-left: auto;
+}
+
+#mic {
+    width: 40px;
+    height: 40px;
+    background-color: #e9e7e7;
+    border-radius: 50%;
+    margin-right: 100px;
+}
+
+.side-nav {
+    position: fixed;
+    width: 0;
+    height: 100%;
+    left: 0;
+    z-index: 1;
+    top: 15px;
+    transition: 0.3s;
+    overflow-y: auto;
+    background-color: white;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+
+ol li {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+ol li:nth-child(1) {
+    margin-top: 0;
+}
+
+ol hr {
+    margin-left: 10px;
+}
+
+ol h1 {
+    margin-left: 10px;
+    font-size: large;
+}
+
+.tog {
+    width: 210px;
+}
+
+.mobile-tog {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.desktop-tog {
+    margin-left: 210px;
+}
+
+.side-nav .ham {
+    padding: 11px;
+}
+
+#category-list {
+    display: flex;
+    gap: 0.75rem;
+    position: fixed;
+    top: 60px;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-left: 10px;
+    z-index: 10;
+    background-color: white;
+}
+
+.category-button {
+    padding: 0.4rem 0.75rem;
+    font-weight: 500;
+    font-size: 0.94rem;
+    border: none;
+    background-color: #ccc;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+    margin-bottom: 12px;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+#videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-con {
+    width: 380px;
+    height: auto;
+    position: relative;
+    margin-top: 5px;
+}
+
+.video-main {
+    display: flex;
+}
+
+.video-img {
+    width: 99%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#main {
+    margin-top: 110px;
+    margin-left: 5px;
+}
+
+.video-user-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.video-text {
+    font-size: larger;
+    padding-left: 10px;
+}
+
+.video-sub-text {
+    padding-left: 50px;
+    margin-top: 0;
+    color: #291f1f;
+    font-size: 15px;
+}
+
+.small {
+    font-size: 6px;
+    color: #646363;
+}
+
+.badge-live {
+    width: 40px;
+    height: auto;
+    color: white;
+    position: absolute;
+    background-color: red;
+    border-radius: 5px;
+    right: 8px;
+    top: 178px;
+    padding-left: 6px;
+    z-index: 1;
+    display: flex;
+}
+
+.badge-off {
+    width: 40px;
+    height: auto;
+    color: white;
+    position: absolute;
+    background-color: black;
+    border-radius: 5px;
+    right: 8px;
+    top: 178px;
+    padding-left: 6px;
+    z-index: 1;
+    display: flex;
+}
+
+@media (max-width:678px) {
+    #mic {
+        display: none;
+    }
+
+    #Search-div {
+        display: none;
+    }
+
+    #m-s-btn {
+        display: block;
+    }
+}
+
+::placeholder {
+    font-size: 15px;
+}
